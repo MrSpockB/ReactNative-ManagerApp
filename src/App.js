@@ -16,12 +16,12 @@ class App extends Component {
     }
     componentDidMount() {
         const config = {
-            apiKey: 'AIzaSyDEdS4ezM1Iu4lsvbZBtZiHhzR8Kg_dFkU',
-            authDomain: 'manager-97b9c.firebaseapp.com',
-            databaseURL: 'https://manager-97b9c.firebaseio.com',
-            projectId: 'manager-97b9c',
-            storageBucket: 'manager-97b9c.appspot.com',
-            messagingSenderId: '288468044507'
+            apiKey: 'API_KEY',
+            authDomain: 'FIREBASE_DOMAIN',
+            databaseURL: 'DATABASE_URL',
+            projectId: 'PROJECT_ID',
+            storageBucket: 'STORAGE_BUCKET',
+            messagingSenderId: 'MESSAGING_SENDER_ID'
         };
         firebase.initializeApp(config);
         firebase.auth().onAuthStateChanged((user) => {
